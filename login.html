@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Instagram Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+        }
+
+        .form {
+            /* background-color: red; */
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .form_h{
+            border-color: rgb(138, 135, 135);
+            border-style: solid;
+            border-width: 2px;
+            padding: 18px;
+            margin-top: 10px;
+        }
+        .form_b{
+            margin-top: 10px;
+            border-color: rgb(138, 135, 135);
+            border-style: solid;
+            border-width: 2px;
+            padding: 18px;
+            width: 300px;
+            padding-left: 50px;
+        }
+        
+        #insta_title{
+            height: 50px;
+            padding-left: 40px;
+        }
+        input{
+            padding: 10px;
+            width: 250px;
+            margin: 5px;
+            background-color: rgb(217, 213, 213);
+            border: none;
+        }
+        button{
+            width: 250px;
+            margin-top: 15px;
+            margin-left: 5px;
+            padding: 4px;
+            background-color: rgb(171, 202, 232);
+            border: none;
+            margin-bottom: 20px;
+        }
+        #or{
+            margin-left: 30px;
+        }
+        h4{
+            margin-top: 20px;
+            padding-left: 50px;
+            margin-bottom: 20px;
+        }
+        #for_pass{
+            padding-left: 85px;
+        }
+        .footer {
+            /* background-color: blue; */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-top: 80px;
+        }
+        .types{
+            display: flex;
+            justify-content: space-around;
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+        .select_copy{
+            /* background-color: rgb(215, 41, 41); */
+            padding-top: 10px;
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+        }
+        p{
+            /* background-color: rgb(193, 118, 44); */
+            padding-left: 10px;
+        }
+        pre{
+            padding-left: 35%;
+            margin-top: 20px;
+        }
+        #api{
+            height: 40px;
+            width: 150px;
+        }
+        #gpi{
+            height: 40px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <div class="form_h">
+            <form>
+                <img id="insta_title" src="https://www.instagram.com/static/images/web/logged_out_wordmark-2x.png/d2529dbef8ed.png" alt="instagram title"><br>
+                <input type="text" placeholder="Phone number,username or email"><br>
+                <input type="password" placeholder="Password"><br>
+                <button type="submit">Log In</button></br>
+                <span id="or">---------------- OR ----------------</span>
+                <h4><a href="" style=" text-decoration: none; color: rgb(33, 90, 139)">Log in with Facebook</a></h4>
+                <a href="#" id="for_pass" style="text-decoration: none; color: rgb(33, 90, 139);font-size: 13px;">Forgot password?</a>
+            </form>
+        </div>
+        <div class="form_b">
+            <h5>Don't have an account? <span><a href="#" style=" text-decoration: none; color: rgb(51, 143, 223)">Sign up</a></span></h5>
+        </div>
+        <div class="form_f">
+            <pre>Get the app.</pre><br>
+            <img id="api"
+                src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png"
+                alt="Appstore image" />
+            <img id="gpi"
+                src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png"
+                alt="Googleplaystote image" />
+        </div>
+    </div>
+    <div class="footer">
+        <div class="types">
+            <a href="#" style=" text-decoration: none; color: black;font-size:12px">Meta</a>
+            <a href="#" style=" text-decoration: none; color: black;font-size:12px">About</a>
+            <a href="#" style=" text-decoration: none; color: black;font-size:12px">Blog</a>
+            <a href="#" style=" text-decoration: none; color: black;font-size:12px">Jobs</a>
+            <a href="#" style=" text-decoration: none; color: black;font-size:12px">Help</a>
+            <a href="#" style=" text-decoration: none; color: black;font-size:12px">API</a>
+            <a href="#" style=" text-decoration: none; color: black;font-size:12px">Privacy</a>
+            <a href="#" style=" text-decoration: none; color: black;font-size:12px">Terms</a>
+            <a href="#" style=" text-decoration: none; color: black;font-size:12px">Top accounts</a>
+            <a href="#" style=" text-decoration: none; color: black;font-size:12px">Hashtags</a>
+            <a href="#" style=" text-decoration: none; color: black;font-size:12px">Locations</a>
+            <a href="#" style=" text-decoration: none; color: black;font-size:12px">Instagram Lite</a>
+            <a href="#" style=" text-decoration: none; color: black;font-size:12px">Contact uploading and non-users</a>
+        </div>
+        <div class="select_copy">
+            <select name="lang" id="lang">
+                <option value="english">English (UK)</option>
+                <option value="tamil">Tamil</option>
+                <option value="hindi">Hindi</option>
+            </select>
+            <p>© 2022 Instagram from Meta</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
